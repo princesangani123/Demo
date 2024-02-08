@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="src/app.css"> -->
+  <!-- <link rel="stylesheet" href="all.min.css"> -->
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <!-- <section>
+    {/* top info section start */}
+    <div className='top-info'>
+      <div className='container'>
+        <div className='d-flex j-center align-center'>
+          <div className='top-l'>
+            <ul className='d-flex'>
+              <li>
+                <IoCall /> +012 345 6789
+              </li>
+              <li>
+                <FaEnvelopeOpen /> info@paintpro.com
+              </li>
+            </ul>
+          </div>
+          {/* <div className='top-r'>
+            <ul className='d-flex'>
+              <li><i>
+                  <FaFacebook />
+                </i></li>
+              <li><i>
+                  <FaTwitter />
+                </i></li>
+              <li><i>
+                  <FaInstagram />
+                </i></li>
+              <li><i>
+                  <FaLinkedinIn />
+                </i></li>
+            </ul>
+          </div> */}
+          <div className='f-icon d-flex header-icon'>
+            <i>
+              <FaTwitter />
+            </i>
+            <i>
+              <FaFacebook />
+            </i>
+            <i>
+              <FaYoutube />
+            </i>
+            <i>
+              <FaLinkedinIn />
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* top info section end */}
+    {/* nav section start */}
+    <div className='menu-bar'>
+      <div className='container'>
+        <div className='d-flex j-center align-center'>
+          <div className='menu-l'>
+            <div className='d-flex j-center align-center'>
+              <img src={require(`./image/logo.png`)}></img>
+              <h1>PaintPro</h1>
+
+            </div>
+          </div>
+          <nav className='menu-r'>
+            <ul className='d-flex'>
+              <li>HOME</li>
+              <li>ABOUT</li>
+              <li>SERVICE</li>
+              <li>PROJECT</li>
+              <li>PAGES</li>
+              <li>CONTACT</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    {/* nav section end */}
+    {/* slider section start */}
+    <section>
+      <div className='slider'>
+        <div className='sliderCover'>
+          <div className='container'>
+            <div className='s-info'>
+              <h1>Bring Life to Your Walls with Colors!</h1>
+              <p>Revitalize your walls with our professional painting services. We're here to breathe new life into your
+                home or workplace.</p>
+              <div className='s-button d-flex'>
+                <button className='s-b-1'>Read More</button>
+                <a>Detali</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* slider section end */}
+
+    {/* serives section start */}
+    <div className='py'></div>
+    <div className='icon-sec'>
+      <div className='container'>
+        <div className='row d-flex'>
+          <div className='i-box w-33'>
+            <div className='paint'>
+              <i>
+                <FaPaintRoller className='paint-i' />
+              </i>
+            </div>
+            <h3>Painting Services</h3>
+            <p>Professional interior and exterior painting to rejuvenate your spaces.</p>
+          </div>
+          <div className='i-box w-33'>
+            <div className='paint'>
+              <i>
+                <FaPaintBrush className='paint-i' />
+              </i>
+            </div>
+            <h3>Plastering</h3>
+            <p>Flawless wall surfaces through expert plastering applications.</p>
+          </div>
+          <div className='i-box w-33'>
+            <div className='paint'>
+              <i>
+                <FaBrush className='paint-i' />
+              </i>
+            </div>
+            <h3>Wallpaper Installation</h3>
+            <p>Enhance your interiors with our wallpaper selection and installation services.</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    {/* serives section end */}
+    {/* about section start */}
+    <div className='py'>
+      <div className='container'>
+        <div className='about d-flex j-center align-center'>
+          <div className='ab-img w-50'>
+            <img src={require(`./image/about-1.jpg`)}></img>
+          </div>
+          <div className='ab-info w-50'>
+            <h4>ABOUT US</h4>
+            <h1>We Invite You to the Enchanting World of Colors.</h1>
+            <p>Our professional painters are here to add color to your walls and breathe life into your spaces.</p>
+            <p>
+              We offer a wide range of services, including interior and exterior painting, plastering applications, and
+              wallpaper installation. We're here to bring your imagination to life.</p>
+            <a><button>Read More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* about section end */}
+    {/* servies area section start */}
+    <div className='py-1'>
+      <div className='se-icon-sec'>
+        <div className='container'>
+          <div className='row d-flex'>
+            <div className='se-i-box w-33'>
+              <div className='se-paint'>
+                <i>
+                  <FaBrush className='se-paint-i' />
+                </i>
+              </div>
+              <h3>Painting Services</h3>
+              <p>Professional interior and exterior painting to rejuvenate your spaces.</p>
+              <button>Read More</button>
+            </div>
+            <div className='se-i-box w-33'>
+              <div className='se-paint'>
+                <i>
+                  <FaPaintRoller className='se-paint-i' />
+                </i>
+              </div>
+              <h3>Plastering</h3>
+              <p>Flawless wall surfaces through expert plastering applications.</p>
+              <button>Read More</button>
+            </div>
+            <div className='se-i-box w-33'>
+              <div className='se-paint'>
+                <i>
+                  <FaPaintBrush className='se-paint-i' />
+                </i>
+              </div>
+              <h3>Wallpaper Installation</h3>
+              <p>Enhance your interiors with our wallpaper selection and installation services.</p>
+              <button>Read More</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* servies area section end */}
+    {/* why choose us section start */}
+    <div className='py'>
+      <div className='container'>
+        <div className='why'>
+          <h4>WHY CHOOSE US!</h4>
+          <h1>Masters of Color and Transformation</h1>
+          <p>Painting your walls is one of the most effective ways to rejuvenate and personalize your home or workplace.
+            Painters work meticulously to beautify your living spaces and breathe life into your walls. Professional
+            painting services demonstrate that painting is not just a job but an art. However, it takes a skilled team
+            that pays attention to intricate details to truly excel in this craft and achieve the desired results.</p>
+          <p>The job of a painter goes beyond simply adding color to walls. They also ensure the walls are smooth and
+            flawless. Plastering applications address imperfections in walls and create a perfect canvas. This is a
+            critical step for subsequent painting, and a professional painter carries it out meticulously.</p>
+          <p>Painters are also experts in wallpaper applications. Wallpaper adds a unique touch and character to your
+            space. A professional painter ensures that wallpaper is applied smoothly, allowing you to achieve the
+            desired aesthetic look.</p>
+          <p>Painters are also experts in wallpaper applications. Wallpaper adds a unique touch and character to your
+            space. A professional painter ensures that wallpaper is applied smoothly, allowing you to achieve the
+            desired aesthetic look.</p>
+          <p>In conclusion, a professional painter is the best choice for transforming the look and feel of your home or
+            workplace. You can trust their expertise to add color to your walls, personalize your living spaces, and
+            enhance their beauty.</p>
+        </div>
+      </div>
+    </div>
+    {/* why choose us section end */}
+    {/* our project section start */}
+    <div className='container'>
+      <div className='p-tital text-center'>
+        <h4>OUR PROJECTS</h4>
+        <h1>Professional Painting Services</h1>
+      </div>
+      <div className='p-info d-flex py'>
+        <div className='p-left'>
+          <button>
+            <h3>Painting</h3>
+          </button>
+          <button>
+            <h3>Plastering </h3>
+          </button>
+          <button>
+            <h3>Wallpaper</h3>
+          </button>
+          <button>
+            <h3>Painting</h3>
+          </button>
+        </div>
+        <div className='p-right d-flex'>
+          <div className='p-right-info w-50'>
+            <h2>Professional Painting Services</h2>
+            <p>Our professional painting services are designed to rejuvenate and personalize your living spaces. We
+              offer a wide range of expert services, including interior and exterior painting, plastering applications,
+              wallpaper installation, and more.</p>
+            <p>Our skilled team is here to bring your vision to life, delivering exceptional results that transform your
+              home or workplace.</p>
+            <button>Read More</button>
+          </div>
+          <div className='p-right-img'>
+            <img src={require(`./image/our.jpg`)}></img>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* our project section end */}
+    {/* team section start */}
+    <div className='container'>
+      <div className='team py-2'>
+        <div className='t-tital text-center m-auto'>
+          <h4>TEAM MEMBERS</h4>
+          <h1>Experienced Team Comprising Master Painters</h1>
+        </div>
+        <div className='t-team w-25 py-2 d-flex'>
+          <div className='t-box'>
+            <div className='t-img'>
+              <img src={require(`./image/team-1.jpg`)}></img>
+            </div>
+            <div className='t-icon d-flex'>
+              <i>
+                <FaFacebook />
+              </i>
+              <i>
+                <FaTwitter />
+              </i>
+              <i>
+                <FaInstagram />
+              </i>
+            </div>
+            <div className='t-info text-center'>
+              <h3>Adam Turner</h3>
+              <span>Color Specialist</span>
+            </div>
+          </div>
+          <div className='t-box'>
+            <div className='t-img'>
+              <img src={require(`./image/team-2.jpg`)}></img>
+            </div>
+            <div className='t-icon d-flex'>
+              <i>
+                <FaFacebook />
+              </i>
+              <i>
+                <FaTwitter />
+              </i>
+              <i>
+                <FaInstagram />
+              </i>
+            </div>
+            <div className='t-info text-center'>
+              <h3>Adam Turner</h3>
+              <span>Color Specialist</span>
+            </div>
+          </div>
+          <div className='t-box'>
+            <div className='t-img'>
+              <img src={require(`./image/team-3.jpg`)}></img>
+            </div>
+            <div className='t-icon d-flex'>
+              <i>
+                <FaFacebook />
+              </i>
+              <i>
+                <FaTwitter />
+              </i>
+              <i>
+                <FaInstagram />
+              </i>
+            </div>
+            <div className='t-info text-center'>
+              <h3>Adam Turner</h3>
+              <span>Color Specialist</span>
+            </div>
+          </div>
+          <div className='t-box'>
+            <div className='t-img'>
+              <img src={require(`./image/team-4.jpg`)}></img>
+            </div>
+            <div className='t-icon d-flex'>
+              <i>
+                <FaFacebook />
+              </i>
+              <i>
+                <FaTwitter />
+              </i>
+              <i>
+                <FaInstagram />
+              </i>
+            </div>
+            <div className='t-info text-center'>
+              <h3>Adam Turner</h3>
+              <span>Color Specialist</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {/* team section end */}
+    {/* testimonial section start */}
+    <div className="container">
+      <div className="test text-center py">
+        <div className="test-tital">
+          <h4>TESTIMONIAL</h4>
+          <h1>Customer Satisfaction Stories:<br></br> Experiences with Us</h1>
+        </div>
+        <div className="test-info">
+          <div className='test-img'>
+            <img src={require(`./image/testimonial-1.jpg`)}></img>
+          </div>
+          <div className='test-cont text-center'>
+            <p>Your painters provided truly excellent service. They painted both the interior and exterior of our home,
+              and the results were fantastic. Our walls are smooth, and the colors are vibrant. Thank you!</p>
+            <h3>Olivia Anderson</h3>
+            <span>Architect</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* testimonial section end */}
+    {/* blog section start */}
+    <div className="container">
+      <div className="b-tital text-center">
+        <h4>LATEST BLOG</h4>
+        <h1>Journey into the World of Colors:<br></br> Painting and Decoration Guide</h1>
+      </div>
+      <div className="b-info py d-flex m-auto">
+        <div className="b-box">
+          <div className='b-img'>
+            <img src={require(`./image/blog-1.jpg`)}></img>
+          </div>
+          <div className='b-const'>
+            <p>27 Sep, 2023 ADMIN</p>
+            <h3>Tips for Achieving a Professional Look When Painting Your Home</h3>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div className="b-box">
+          <div className='b-img'>
+            <img src={require(`./image/blog-2.jpg`)}></img>
+          </div>
+          <div className='b-const'>
+            <p>27 Sep, 2023 ADMIN</p>
+            <h3>Tips for Achieving a Professional Look When Painting Your Home</h3>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div className="b-box">
+          <div className='b-img'>
+            <img src={require(`./image/blog-3.jpg`)}></img>
+          </div>
+          <div className='b-const '>
+            <p>27 Sep, 2023 ADMIN</p>
+            <h3>Tips for Achieving a Professional Look When Painting Your Home</h3>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* blog section end */}
+    {/* footer section start */}
+    <footer>
+      <div className="container">
+        <div className='f-main d-flex'>
+          <div className='f-address w-25'>
+            <h4>ADDRESS</h4>
+            <p><i>
+                <FaMapMarkerAlt />
+              </i>123 Street, New York, USA</p>
+            <p><i>
+                <IoCall />
+              </i>+012 345 67890</p>
+            <p><i>
+                <FaEnvelopeOpen />
+              </i>info@paintpro.com</p>
+            <div className='f-icon d-flex'>
+              <i>
+                <FaTwitter />
+              </i>
+              <i>
+                <FaFacebook />
+              </i>
+              <i>
+                <FaYoutube />
+              </i>
+              <i>
+                <FaLinkedinIn />
+              </i>
+            </div>
+          </div>
+          <div className='f-address w-25'>
+            <h4>Services</h4>
+            <p><i>
+                <FaAngleRight />
+              </i>Interior Painting</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Exterior Painting</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Wall Repair & Preparation</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Staining & Varnishing</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Special Effects & Painting</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Commercial Painting</p>
+          </div>
+          <div className='f-address w-25'>
+            <h4>QUICK LINKS</h4>
+            <p><i>
+                <FaAngleRight />
+              </i>About Us</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Contact Us</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Our Serivces</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Terms & Condition</p>
+            <p><i>
+                <FaAngleRight />
+              </i>Support</p>
+          </div>
+          <div className='f-address w-25'>
+            <h4>NEWSLETTER</h4>
+            <p>Register your email address.</p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <script src="jquery-3.7.0.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+  <script>
+
+    let navbar = document.querySelector('.header .navbar');
+    let menuBtn = document.querySelector('#menu');
+
+    menuBtn.onclick = () => {
+      menuBtn.classList.toggle('fa-times');
+      navbar.classList.toggle('active');
+    };
+
+    window.onscroll = () => {
+      menuBtn.classList.remove('fa-times');
+      navbar.classList.remove('active');
+    };
+
+    let themeBtn = document.querySelector('#theme-btn');
+
+    themeBtn.onclick = () => {
+      themeBtn.classList.toggle('fa-sun');
+
+      if (themeBtn.classList.contains('fa-sun')) {
+        document.body.classList.add('active');
+      } else {
+        document.body.classList.remove('active');
+      }
+
+    };
+
+    var swiper = new Swiper(".gallery-slider", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      }
+    });
+
+    var swiper = new Swiper(".review-slider", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 20,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+
+    AOS.init({
+      duration: 800,
+      delay: 400
+    });
+
+  </script>
+</body>
+
+</html>
